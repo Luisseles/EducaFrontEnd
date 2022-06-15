@@ -1,0 +1,37 @@
+/*#img-bg {
+    background-image: url("https://i.imgur.com/LlGfE6l.jpg");
+    min-height: 695px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}*/
+
+
+
+.container-fluid {
+    background-color: white;
+    background-image: url("https://i.imgur.com/LlGfE6l.jpg");
+    min-height: 695px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: white;
+    
+    
+}
+
+
+hr {
+    background-color: white;
+}
+
+a{
+
+  color: gold;
+  
+}
+
+a:hover{
+    color:blue;
+}
+

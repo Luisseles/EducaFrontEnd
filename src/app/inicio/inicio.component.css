@@ -1,0 +1,54 @@
+
+.container-fluid{
+    background-color: #2B475E;
+
+}
+
+.fs-54 {
+    color:#FFD43D;
+    padding: 3rem;
+    text-align: left;
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 2rem;
+
+}
+
+.fs-18 {
+    padding-bottom: 2rem;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5rem;
+
+}
+
+.card-group{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    
+    
+}
+
+.btn{
+    margin-left: 5rem;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    color: white;
+}
+
+.btn:hover{
+    background-color:#FFD43D;
+}
+.bg{
+    background-color: #2B475E;
+    border: 0ch;
+}
+
+
+

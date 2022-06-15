@@ -1,0 +1,39 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
+import { ParceiroLogin } from '../model/ParceiroLogin';
+import { ParceiroService } from '../service/parceiro.service';
+
+@Component({
+  selector: 'app-entrar-parceiro',
+  templateUrl: './entrar-parceiro.component.html',
+  styleUrls: ['./entrar-parceiro.component.css']
+})
+export class EntrarParceiroComponent implements OnInit {
+  parceiroLogin: ParceiroLogin = new ParceiroLogin;
+
+  constructor(
+    private parceiroService: ParceiroService,
+    private router: Router
+  ) { }
+
+  ngOnInit(): void {
+  }
+  entrarParceiro() {
+    this.parceiroService.postEntrar(this.parceiroLogin).subscribe({
+      next: (resp: ParceiroLogin) => {
+        this.parceiroLogin = resp
+        environment.foto = this.parceiroLogin.foto
+        environment.id = this.parceiroLogin.id
+        environment.nome = this.parceiroLogin.nome
+        environment.token = this.parceiroLogin.token
+        this.router.navigate(["/inicio"])
+        alert('Bem vindo(a)!')
+      }, error: erro => {
+        if (erro.status == 500 || erro.status == 401) {
+          alert('ERRO! Usuário ou senha inválidos!')
+        }
+      },
+    });
+  }
+}

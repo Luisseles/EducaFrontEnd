@@ -1,0 +1,54 @@
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.fs:hover{
+    color: #FFD43D;
+  
+}
+
+a:hover{
+    color: white;
+}
+.fp{
+    font-size: 20pt;
+    color: white;
+    
+}
+.tra{
+    text-decoration: none;
+}
+.bg{
+    background-color: #FFD43D;
+}
+
+.bf{
+    font-size: 20pt;
+    color: #2B475E;
+      
+}
+.fn{
+    font-size: 35pt;
+    color: #2B475E;
+}
+.btn:hover{
+    
+    color: white ;
+    background-color: #2B475E;
+}
+.btn{
+    background-color: white;
+}
+.fa1:hover{
+    color: #FFD43D;
+  
+}
+.fa1{
+    font-size: 20pt;
+    color: white;
+    
+}

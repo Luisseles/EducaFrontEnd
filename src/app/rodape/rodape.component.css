@@ -1,0 +1,15 @@
+
+::ng-deep body{
+    background-color: #2b475e;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffd43d;
+}
+.tra{
+    text-decoration: none;
+}
