@@ -21,7 +21,7 @@ export class EntrarComponent implements OnInit {
     window.scroll(0, 0)
   }
   entrarUsuario() {
-    this.usuarioService.postEntrar(this.usuarioLogin).subscribe({
+    this.usuarioService.postLogar(this.usuarioLogin).subscribe({
       next: (resp: UsuarioLogin) => {
         this.usuarioLogin = resp
         environment.foto = this.usuarioLogin.foto

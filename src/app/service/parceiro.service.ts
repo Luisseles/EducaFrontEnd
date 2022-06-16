@@ -2,17 +2,19 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
+import { Curso } from '../model/Curso';
 import { Parceiro } from '../model/Parceiro';
 import { ParceiroLogin } from '../model/ParceiroLogin';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ParceiroService {
 
   constructor(
     private http: HttpClient
-  ) { }
+    ) { }
 
   token = {headers: new HttpHeaders().set("Authorization", environment.token)}
 
@@ -24,19 +26,23 @@ export class ParceiroService {
     return this.http.get<Parceiro>(`http://localhost:8080/parceiros/email/${email}`, this.token)
   }
 
-  getByNome(nome: number): Observable<Parceiro>{
-    return this.http.get<Parceiro>(`http://localhost:8080/parceiros/nome/${nome}`, this.token)
+  getByNome(nome: number): Observable<Parceiro[]>{
+    return this.http.get<Parceiro[]>(`http://localhost:8080/parceiros/nome/${nome}`, this.token)
   }
 
-  getByCurso(email: number): Observable<Parceiro>{
-    return this.http.get<Parceiro>(`http://localhost:8080/parceiros/curso/${email}`, this.token)
+  getByCNPJ(cnpj: string): Observable<Parceiro>{
+    return this.http.get<Parceiro>(`http://localhost:8080/parceiros/cnpj/${cnpj}`, this.token)
+  }
+
+  getByCurso(email: number): Observable<Curso[]>{
+    return this.http.get<Curso[]>(`http://localhost:8080/parceiros/cursos/${email}`, this.token)
   }
 
   getAll(): Observable<Parceiro[]>{
     return this.http.get<Parceiro[]>(`http://localhost:8080/parceiros/all`, this.token)
   }
 
-  postEntrar(parceiroLogin:ParceiroLogin):Observable<ParceiroLogin>{
+  postLogar(parceiroLogin:ParceiroLogin):Observable<ParceiroLogin>{
     return this.http.post<ParceiroLogin>('http://localhost:8080/parceiros/logar',parceiroLogin)
   }
 
@@ -44,8 +50,8 @@ export class ParceiroService {
     return this.http.post<Parceiro>('http://localhost:8080/parceiros/cadastrar',parceiro)
   }
 
-  putEditar(parceiro: Parceiro):Observable<Parceiro>{
-    return this.http.put<Parceiro>('http://localhost:8080/parceiros/editar', parceiro, this.token)
+  putAtualizar(parceiro: Parceiro):Observable<Parceiro>{
+    return this.http.put<Parceiro>('http://localhost:8080/parceiros/atualizar', parceiro, this.token)
   }
 
   logado(){

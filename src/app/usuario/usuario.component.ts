@@ -32,7 +32,7 @@ export class UsuarioComponent implements OnInit {
     if (this.usuario.senha != this.confirmarSenha) {
     alert('A senhas estão incorretas.')
     }else{
-      this.usuarioService.putEditar(this.usuario).subscribe((resp: Usuario) => {
+      this.usuarioService.putAtualizar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
     
    
@@ -60,5 +60,3 @@ findByUser(id: number){
 }
 }
   
-
-

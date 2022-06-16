@@ -9,6 +9,5 @@ export class Parceiro {
 	public email: string;
 	public telefone: string;
 	public senha: string
-	public token: string;
     public curso: Curso[];
 }

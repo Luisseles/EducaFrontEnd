@@ -6,10 +6,12 @@
     
     background-color: rgb(17, 255, 17);
 }
+
 .btn-squaree:hover{
     
     background-color: rgb(255, 53, 17);
 }
+
 .container-fluid{
     background-color:#2b475e;
 }
@@ -20,23 +22,27 @@
         background-position:center;
         background-repeat:no-repeat;
         background-size:cover;
-    
 }
+
 h1{
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
+
 p{
     font-family: 'Courier New', Courier, monospace;
     color: white;
     margin-bottom: 0%;
 }
+
 .cor{
     background-color: green;
 }
+
 .core{
     background-color:red;
 }
+
 button{
     margin-top:30px;
     margin-right: 20px;
@@ -44,5 +50,3 @@ button{
     border-radius: 5px;
     padding: 4px;
 }
-
-

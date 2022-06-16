@@ -20,7 +20,7 @@ export class EntrarParceiroComponent implements OnInit {
   ngOnInit(): void {
   }
   entrarParceiro() {
-    this.parceiroService.postEntrar(this.parceiroLogin).subscribe({
+    this.parceiroService.postLogar(this.parceiroLogin).subscribe({
       next: (resp: ParceiroLogin) => {
         this.parceiroLogin = resp
         environment.foto = this.parceiroLogin.foto
