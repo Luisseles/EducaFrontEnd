@@ -10,5 +10,5 @@ export const environment = {
   telefone:"",
   token:'',
   cnpj:"",
-  curso:"",
+  curso:""
 };

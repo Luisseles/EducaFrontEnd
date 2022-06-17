@@ -10,7 +10,7 @@ import { EntrarParceiroComponent } from './entrar-parceiro/entrar-parceiro.compo
 import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parceiro.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "entrar", pathMatch: "full" },
+  { path: "", redirectTo: "inicio", pathMatch: "full" },
   { path: "entrarUsuario", component: EntrarComponent },
   { path: "entrarParceiro", component:EntrarParceiroComponent},
   { path: "cadastrarUsuario", component: CadastrarComponent },
