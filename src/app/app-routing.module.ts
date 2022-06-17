@@ -8,6 +8,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { CadastrarComponent } from './cadastrar-usuario/cadastrar-usuario.component';
 import { EntrarParceiroComponent } from './entrar-parceiro/entrar-parceiro.component';
 import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parceiro.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "inicio", pathMatch: "full" },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: "parceiros", component:ParceirosComponent},
   { path: "usuario", component:UsuarioComponent},
   { path: "sobre-nos", component:SobreNosComponent},
+  {path:"categoria", component:CategoriaComponent}
   
 ];
 
