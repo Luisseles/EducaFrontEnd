@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { Usuario } from '../model/Usuario';
 import { UsuarioService } from '../service/usuario.service';
 
@@ -26,18 +27,23 @@ export class CadastrarComponent implements OnInit {
     this.confirmarSenha=event.target.value
   }
 
-  Pronome(event:any){
+  proname(event:any){
     this.pronome=event.target.value
   }
 
   cadastrarUsuario() {
+    this.usuario.pronome = this.pronome;
     if(this.usuario.senha != this.confirmarSenha){
       alert('as senhas estão incorretas!')
     }else{
       this.usuarioService.postCadastrar(this.usuario).subscribe((resp:Usuario)=>{
         this.usuario= resp
         this.router.navigate(['/entrar'])
-        alert('usuario cadastrado!!')
+        Swal.fire(
+          'Good job!',
+          'You clicked the button!',
+          'success'
+        )
       })
     }
   }

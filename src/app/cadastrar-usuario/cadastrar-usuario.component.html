@@ -11,8 +11,8 @@
                         <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="nome" id="nome" placeholder="Seu Nome">
                     </div>
                     <div class="form-group">
-                        <label for="pronome"><p> <b> Pronome</b></p></label>
-                       <select class="form-control" name="pronome" id="pronome" (change)="Pronome($event)">
+                        <label for="pronome"><p> <b> Pronome </b></p></label>
+                       <select class="form-control" type="text" name="pronome" id="pronome" (change)="proname($event)">
                        <option> Selecione seu pronome</option>
                        <option value="ela">Ela/Dela</option>
                        <option value="ele">Ele/Dele</option>

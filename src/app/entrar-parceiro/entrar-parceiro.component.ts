@@ -19,6 +19,7 @@ export class EntrarParceiroComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   entrarParceiro() {
     this.parceiroService.postLogar(this.parceiroLogin).subscribe({
       next: (resp: ParceiroLogin) => {
