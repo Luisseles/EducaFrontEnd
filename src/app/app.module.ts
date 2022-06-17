@@ -14,6 +14,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { EntrarParceiroComponent } from './entrar-parceiro/entrar-parceiro.component';
 import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parceiro.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parce
     SobreNosComponent,
     EntrarParceiroComponent,
     CadastrarParceiroComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,
