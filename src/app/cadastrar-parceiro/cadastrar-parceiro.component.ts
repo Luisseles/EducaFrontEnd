@@ -17,7 +17,7 @@ export class CadastrarParceiroComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
   confirmSenha(event:any){
