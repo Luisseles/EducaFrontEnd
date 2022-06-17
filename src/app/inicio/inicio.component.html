@@ -32,13 +32,119 @@
     </li>
 
   </div>
+
+  <li class="nav-item">
+    <a class="active nav-a" aria-current="page" routerLink="/categoria">NOSSAS FORMAÇÕES</a>
+  </li>
+
+  <li class="nav-item">
+
+    <a class="active nav-a" aria-current="page" routerLink="/cadastrar-parceiro">SOU EMPRESA</a>
+
+    <a class="active nav-a" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modal-parceiro">SOU
+      EMPRESA</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="active nav-a" aria-current="page" href="#" data-bs-toggle="modal"
+      data-bs-target="#modal-usuario">ENTRAR</a>
+  </li>
+
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
 </nav>
 
+<!-- Modal Login Usuario-->
+<div class="modal fade" id="modal-usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
 
-<header id="home">
-  <div class="img-wrapper">
 
-    <img src="https://i.imgur.com/0qUjgaS.jpg" alt="">
+          <header id="home">
+            <div class="img-wrapper">
+
+              <img src="https://i.imgur.com/0qUjgaS.jpg" alt="">
+
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input [(ngModel)]="usuarioLogin.usuario" class="form-control" type="text" name="usuario" id="usuario"
+                  placeholder="Ex: usuario@email.com">
+              </div>
+
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Senha:</label>
+                <input [(ngModel)]="usuarioLogin.senha" class="form-control" type="password" name="senha" id="senha"
+                  placeholder="Senha">
+                <h6 class="mt-3">Ainda não é nosso aluno? <a routerLink="/cadastrarUsuario"
+                    data-bs-toggle="modal">Inscreva-se</a></h6>
+              </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success" (click)="entrarUsuario()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal -->
+
+<!-- Modal Login Empresa -->
+<div class="modal fade" id="modal-parceiro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input [(ngModel)]="parceiro.email" class="form-control" type="text" placeholder="Ex: empresa@email.com">
+          </div>
+
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Senha:</label>
+            <input [(ngModel)]="parceiro.senha" class="form-control" type="password" placeholder="Senha">
+            <h6 class="mt-3">Ainda não é nosso Parceiro? <a routerLink="/cadastrarParceiro"
+                data-bs-toggle="modal">Cadastre-se</a></h6>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success" (click)="entrarUsuario()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal -->
+
+<div class="jumbotron color-bg-principal text-white ">
+  <div class="row d-flex align-items-center">
+
+    <div class="col-md-6">
+      <h2> Mergulhe em Tecnologia! </h2>
+      <p class="text-white">Você vai estudar, praticar, discutir e se aprofundar em uma plataforma que respira
+        tecnologia. </p>
+    </div>
+
+    <div class="col-md-6">
+      <img src="https://i.imgur.com/HweivRN.png" alt="" width="500px" height="500px">
+    </div>
 
   </div>
   <div class="banner">
@@ -49,85 +155,102 @@
     <p>em uma plataforma que respira tecnologia.</p>
     <a href="..." target="_blank"><button>Saiba mais</button></a>
   </div>
-</header>
+  </header>
 
 
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4"> EDUCA ++ </h1>
-    <p class="lead">" O Educa ++ tem o intuito de promover a capacitação de pessoas de baixa renda com cursos de tecnologia que estão em alta no mercado de trabalho, dando também um suporte de auxilio caso necessário. Fazendo uma ligação com 
-      parceiros para que nossos usuários sejam empregados".</p>
-  </div>
-  <br>
-  <hr>
-</div>
-
-
-
-
-<div id="carouselExampleIndicators" class="carousel slide bg-carousel bg-withe" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"> EDUCA ++ </h1>
+      <p class="lead">" O Educa ++ tem o intuito de promover a capacitação de pessoas de baixa renda com cursos de
+        tecnologia que estão em alta no mercado de trabalho, dando também um suporte de auxilio caso necessário. Fazendo
+        uma ligação com
+        parceiros para que nossos usuários sejam empregados".</p>
+    </div>
+    <br>
+    <hr>
   </div>
 
-  <div class="carousel-inner">    
+
+
+
+
+
+  <!-- carousel notícias -->
+
+  <div id="carouselExampleIndicators" class="carousel slide bg-carousel bg-withe" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row d-flex align-items-center mt-4">
-
           <div class="col-md-6">
             <h2 class="card-title">Mulheres na Tecnologia</h2>
-            <p class="card-text">Dentro das organizações, em 64,9% dos casos, as mulheres representam no máximo 20% das equipes de trabalho em tecnologia. Os principais cargos e áreas ocupados pelas mulheres nas equipes de tecnologia são: desenvolvedora, analista, gerência, project, tester e design.</p>
+            <p class="card-text">Dentro das organizações, em 64,9% dos casos, as mulheres representam no máximo 20% das
+              equipes de trabalho em tecnologia. Os principais cargos e áreas ocupados pelas mulheres nas equipes de
+              tecnologia são: desenvolvedora, analista, gerência, project, tester e design.</p>
           </div>
-  
+
           <div class="col-md-6">
             <img src="https://i.imgur.com/ILwT6DW.png" class="d-block w-100" width="450" height="500" alt="...">
           </div>
-                  
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row d-flex align-items-center mt-4">
+          <div class="col-md-6">
+            <h2 class="card-title">Tecnologia no Mundo</h2>
+            <p class="card-text">A tecnologia está associada a vida humana
+              desde os tempos remotos, porém cada epoca teve um desenvolvimento tecnológico diferente. Atualmente
+              estamos vivendo a era tecnológica mais desenvolvida da historia, no ultimo seculo o mundo passou por um
+              boom tecnológico com o constante desenvolvimento de tecnologias na área de produtos e informações que
+              estão transformando o mundo. Atualmente, vemos o desenvolvimento de maquinas e equipamentos que vem
+              facilitando a vida dos homens e mulheres nas mais diversas áreas na educação no trabalho, no meio
+              ambiente, na própria casa, etc.</p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="https://i.imgur.com/na2DZ9i.png" class="d-block w-100 " width="450" height="500" alt="...">
+          </div>
+
         </div>
       </div>
 
-             
+      <div class="carousel-item">
+        <div class="row d-flex align-items-center mt-4">
+          <div class="col-md-6">
+            <h2 class="card-title">Alta empregabilidade</h2>
+            <p class="card-text">O setor de tecnologia aumentou em 136% o
+              número de vagas de emprego em 2021 em relação com o ano anterior. Já as contratações efetivadas tiveram um
+              salto de 182%. Os dados são de um levantamento da GeekHunter em sua base de informações. A startup de
+              recrutamento é especializada em contratação de desenvolvedores de software e cientistas de dados.</p>
+          </div>
 
-    <div class="carousel-item">
-      <div class="row d-flex align-items-center mt-4">
-        <div class="col-md-6">
-          <h2 class="card-title">Tecnologia no Mundo</h2>
-          <p class="card-text">A tecnologia está associada a vida humana
-             desde os tempos remotos, porém cada epoca teve um desenvolvimento tecnológico diferente. Atualmente estamos vivendo a era tecnológica mais desenvolvida da historia, no ultimo seculo o mundo passou por um boom tecnológico com o constante desenvolvimento de tecnologias na área de produtos e informações que estão transformando o mundo. Atualmente, vemos o desenvolvimento de maquinas e equipamentos que vem facilitando a vida dos homens e mulheres nas mais diversas áreas na educação no trabalho, no meio ambiente, na  própria casa, etc.</p>
-        </div>
+          <div class="col-md-6">
+            <img src="https://i.imgur.com/V5OZ5FX.png" class="d-block w-100" width="450" height="500" alt="...">
+          </div>
 
-        <div class="col-md-6">
-          <img src="https://i.imgur.com/na2DZ9i.png" class="d-block w-100 " width="450" height="500" alt="...">
         </div>
-                
       </div>
+
     </div>
-
-    <div class="carousel-item">
-      <div class="row d-flex align-items-center mt-4">
-        <div class="col-md-6">
-          <h2 class="card-title">Alta empregabilidade</h2>
-          <p class="card-text">O setor de tecnologia aumentou em 136% o 
-            número de vagas de emprego em 2021 em relação com o ano anterior. Já as contratações efetivadas tiveram um salto de 182%. Os dados são de um levantamento da GeekHunter em sua base de informações. A startup de recrutamento é especializada em contratação de desenvolvedores de software e cientistas de dados.</p>
-        </div>
-
-        <div class="col-md-6">
-          <img src="https://i.imgur.com/V5OZ5FX.png" class="d-block w-100" width="450" height="500" alt="...">
-        </div>
-                
-      </div>
-    </div>
-
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  <!-- carousel notícias -->

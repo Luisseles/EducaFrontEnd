@@ -1,0 +1,24 @@
+.body{
+    background: -webkit-linear-gradient(to right, #000316, #000000);
+    background: linear-gradient(to right, #000316, #000000);
+}
+#img-bg{
+    background-image: url("https://media.discordapp.net/attachments/969572770826579998/987466221148598362/05683ca46e3c695751b8f002957925be.jpg?width=760&height=428");
+    min-height: 695px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+button{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.btn-square:hover{
+    
+    background-color: rgb(17, 255, 17);
+}
+
+.btn-squaree:hover{
+    
+    background-color: rgb(255, 53, 17);
+}
