@@ -16,11 +16,11 @@
               </li>
       
               <li class="nav-item">
-                <a class="active nav-a" aria-current="page" href="#">SOU EMPRESA</a>
+                <a class="active nav-a" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modal-parceiro">SOU EMPRESA</a>
               </li>
     
               <li class="nav-item">
-                <a class="active nav-a" aria-current="page" href="#">LOGIN</a>
+                <a class="active nav-a" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modal-usuario">ENTRAR</a>
               </li>
             
             </ul>
@@ -30,9 +30,71 @@
     </div>
 </nav>
 
+<!-- Modal Login Usuario-->
+<div class="modal fade" id="modal-usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
 
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input [(ngModel)]="usuarioLogin.usuario" class="form-control" type="text" name="usuario" id="usuario" placeholder="Ex: usuario@email.com">
+          </div>
 
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Senha:</label>
+            <input [(ngModel)]="usuarioLogin.senha" class="form-control" type="password" name="senha" id="senha" placeholder="Senha">
+            <h6 class="mt-3">Ainda não é nosso aluno? <a routerLink="/cadastrarUsuario" data-bs-toggle="modal">Inscreva-se</a></h6>
+          </div>
+        </form>
 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success" (click)="entrarUsuario()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal -->
+
+<!-- Modal Login Empresa -->
+<div class="modal fade" id="modal-parceiro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input [(ngModel)]="parceiro.email" class="form-control" type="text" placeholder="Ex: empresa@email.com">
+          </div>
+
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Senha:</label>
+            <input [(ngModel)]="parceiro.senha" class="form-control" type="password" placeholder="Senha">
+            <h6 class="mt-3">Ainda não é nosso Parceiro? <a routerLink="/cadastrarParceiro" data-bs-toggle="modal">Cadastre-se</a></h6>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success" (click)="entrarUsuario()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /modal -->
 
 <div class="jumbotron color-bg-principal text-white ">
   <div class="row d-flex align-items-center">
@@ -53,14 +115,7 @@
   <a class="btn btn-primary btn-lg" href="#" role="button">Parceiros</a>
 </div>
 
-
-
-
-
-
-
-
-
+<!-- carousel notícias -->
 <div id="carouselExampleIndicators" class="carousel slide bg-carousel bg-withe" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,7 +126,6 @@
   <div class="carousel-inner">    
       <div class="carousel-item active">
         <div class="row d-flex align-items-center mt-4">
-
           <div class="col-md-6">
             <h2 class="card-title">Mulheres na Tecnologia</h2>
             <p class="card-text">Dentro das organizações, em 64,9% dos casos, as mulheres representam no máximo 20% das equipes de trabalho em tecnologia. Os principais cargos e áreas ocupados pelas mulheres nas equipes de tecnologia são: desenvolvedora, analista, gerência, project, tester e design.</p>
@@ -83,9 +137,6 @@
                   
         </div>
       </div>
-
-             
-
     <div class="carousel-item">
       <div class="row d-flex align-items-center mt-4">
         <div class="col-md-6">
@@ -126,3 +177,4 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<!-- carousel notícias -->

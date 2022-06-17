@@ -3,11 +3,12 @@ ul {
     padding: 0px;
 }
 
-  ul.lista-nav li {
-    display: inline;
-    margin: 0px;
+ul.lista-nav li {
+display: inline;
+margin: 0px;
 
-  }
+}
+
 
 .color-bg-principal{
     background-color: #2B475E;
