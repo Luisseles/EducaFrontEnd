@@ -112,7 +112,7 @@ header {
   }
 }
 
-.button {
+.botao {
 
   font-family: "Baloo Da 2", serif;
   color: black;
@@ -217,4 +217,12 @@ h2 {
 
 .card-title{
   margin: top 2rem; ;
+}
+
+a{
+  color: #eee;
+}
+
+a:hover{
+  color: #fffc00;
 }
