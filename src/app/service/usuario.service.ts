@@ -18,35 +18,35 @@ export class UsuarioService {
   token = {headers: new HttpHeaders().set('Authorization', environment.token)}
 
   getById(id: number): Observable<Usuario>{
-    return this.http.get<Usuario>(`http://localhost:8080/usuarios/${id}`, this.token)
+    return this.http.get<Usuario>(`https://educamaismais.herokuapp.com/usuarios/${id}`, this.token)
   }
 
   getByEmail(email: number): Observable<Usuario>{
-    return this.http.get<Usuario>(`http://localhost:8080/usuarios/email/${email}`, this.token)
+    return this.http.get<Usuario>(`https://educamaismais.herokuapp.com/usuarios/email/${email}`, this.token)
   }
 
   getByNome(nome: number): Observable<Usuario[]>{
-    return this.http.get<Usuario[]>(`http://localhost:8080/usuarios/nome/${nome}`, this.token)
+    return this.http.get<Usuario[]>(`https://educamaismais.herokuapp.com/usuarios/nome/${nome}`, this.token)
   }
 
   getByCurso(email: number): Observable<Curso[]>{
-    return this.http.get<Curso[]>(`http://localhost:8080/usuarios/cursos/${email}`, this.token)
+    return this.http.get<Curso[]>(`https://educamaismais.herokuapp.com/usuarios/cursos/${email}`, this.token)
   }
 
   getAll(): Observable<Usuario[]>{
-    return this.http.get<Usuario[]>(`http://localhost:8080/usuarios/all`, this.token)
+    return this.http.get<Usuario[]>(`https://educamaismais.herokuapp.com/usuarios/all`, this.token)
   }
 
   postLogar(usuarioLogin:UsuarioLogin):Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar',usuarioLogin)
+    return this.http.post<UsuarioLogin>('https://educamaismais.herokuapp.com/usuarios/logar',usuarioLogin)
   }
 
   postCadastrar(user:Usuario):Observable<Usuario> {
-    return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar',user)
+    return this.http.post<Usuario>('https://educamaismais.herokuapp.com/usuarios/cadastrar',user)
   }
 
   putAtualizar(user: Usuario):Observable<Usuario>{
-    return this.http.put<Usuario>('http://localhost:8080/usuarios/atualizar', user, this.token)
+    return this.http.put<Usuario>('https://educamaismais.herokuapp.com/usuarios/atualizar', user, this.token)
   }
 
   logado(){

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import Swal from 'sweetalert2';
 import { Parceiro } from '../model/Parceiro';
 import { ParceiroLogin } from '../model/ParceiroLogin';
 import { Usuario } from '../model/Usuario';
@@ -40,10 +41,13 @@ export class InicioComponent implements OnInit {
         environment.nome = this.usuarioLogin.nome
         environment.token = this.usuarioLogin.token
         this.router.navigate(["/inicio"])
-        alert('Bem vindo(a)!')
       }, error: erro => {
         if (erro.status == 500 || erro.status == 401) {
-          alert('ERRO! Usuário ou senha inválidos!')
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Usuario ou Senha incorreto(a)',
+          })
         }
       },
     });
@@ -58,13 +62,15 @@ export class InicioComponent implements OnInit {
         environment.nome = this.parceiroLogin.nome
         environment.token = this.parceiroLogin.token
         this.router.navigate(["/inicio"])
-        alert('Bem vindo(a)!')
       }, error: erro => {
         if (erro.status == 500 || erro.status == 401) {
-          alert('ERRO! Usuário ou senha inválidos!')
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Usuario ou Senha incorreto(a)',
+          })
         }
       },
     });
   }
-
 }

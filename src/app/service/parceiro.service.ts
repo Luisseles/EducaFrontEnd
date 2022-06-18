@@ -19,39 +19,39 @@ export class ParceiroService {
   token = {headers: new HttpHeaders().set("Authorization", environment.token)}
 
   getById(id: number): Observable<Parceiro>{
-    return this.http.get<Parceiro>(`http://localhost:8080/parceiros/${id}`, this.token)
+    return this.http.get<Parceiro>(`https://educamaismais.herokuapp.com/parceiros/${id}`, this.token)
   }
 
   getByEmail(email: number): Observable<Parceiro>{
-    return this.http.get<Parceiro>(`http://localhost:8080/parceiros/email/${email}`, this.token)
+    return this.http.get<Parceiro>(`https://educamaismais.herokuapp.com/parceiros/email/${email}`, this.token)
   }
 
   getByNome(nome: number): Observable<Parceiro[]>{
-    return this.http.get<Parceiro[]>(`http://localhost:8080/parceiros/nome/${nome}`, this.token)
+    return this.http.get<Parceiro[]>(`https://educamaismais.herokuapp.com/parceiros/nome/${nome}`, this.token)
   }
 
   getByCNPJ(cnpj: string): Observable<Parceiro>{
-    return this.http.get<Parceiro>(`http://localhost:8080/parceiros/cnpj/${cnpj}`, this.token)
+    return this.http.get<Parceiro>(`https://educamaismais.herokuapp.com/parceiros/cnpj/${cnpj}`, this.token)
   }
 
   getByCurso(email: number): Observable<Curso[]>{
-    return this.http.get<Curso[]>(`http://localhost:8080/parceiros/cursos/${email}`, this.token)
+    return this.http.get<Curso[]>(`https://educamaismais.herokuapp.com/parceiros/cursos/${email}`, this.token)
   }
 
   getAll(): Observable<Parceiro[]>{
-    return this.http.get<Parceiro[]>(`http://localhost:8080/parceiros/all`, this.token)
+    return this.http.get<Parceiro[]>(`https://educamaismais.herokuapp.com/parceiros/all`, this.token)
   }
 
   postLogar(parceiroLogin:ParceiroLogin):Observable<ParceiroLogin>{
-    return this.http.post<ParceiroLogin>('http://localhost:8080/parceiros/logar',parceiroLogin)
+    return this.http.post<ParceiroLogin>('https://educamaismais.herokuapp.com/parceiros/logar',parceiroLogin)
   }
 
   postCadastrar(parceiro:Parceiro):Observable<Parceiro> {
-    return this.http.post<Parceiro>('http://localhost:8080/parceiros/cadastrar',parceiro)
+    return this.http.post<Parceiro>('https://educamaismais.herokuapp.com/parceiros/cadastrar',parceiro)
   }
 
   putAtualizar(parceiro: Parceiro):Observable<Parceiro>{
-    return this.http.put<Parceiro>('http://localhost:8080/parceiros/atualizar', parceiro, this.token)
+    return this.http.put<Parceiro>('https://educamaismais.herokuapp.com/parceiros/atualizar', parceiro, this.token)
   }
 
   logado(){
