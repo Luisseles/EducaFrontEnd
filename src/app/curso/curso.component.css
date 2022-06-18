@@ -1,0 +1,54 @@
+.bg {
+    background-color: #2B475E;
+}
+
+.cor {
+    background-color: #FFD43D;
+}
+
+.zoom:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.img {
+    height: 10%;
+    width: 10%;
+}
+
+.btn1:hover {
+
+
+    color: white;
+    background-color: #2B475E;
+}
+
+.btn {
+    background-color: white;
+
+
+}
+
+.btm {
+    color: white;
+    background-color: #e92626;
+}
+
+.btm2 {
+    color: white;
+    background-color: #26e930;
+}
+
+.margem {
+
+    margin-top: 10%;
+}
+margin{
+    margin-left: 70px;
+}
+
+a{
+    color: gold;
+}
+

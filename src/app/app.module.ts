@@ -15,6 +15,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { EntrarParceiroComponent } from './entrar-parceiro/entrar-parceiro.component';
 import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parceiro.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { CursoComponent } from './curso/curso.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { CategoriaComponent } from './categoria/categoria.component';
     EntrarParceiroComponent,
     CadastrarParceiroComponent,
     CadastrarComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    CursoComponent
   ],
   imports: [
     BrowserModule,
