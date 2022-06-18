@@ -1,6 +1,9 @@
 /*::ng-deep body{
     background-color: #2b475e;
 }*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap%27');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css%22");
 
 .btn-square:hover{
     
@@ -13,11 +16,14 @@
 }
 
 .container-fluid{
-    background-color:#2b475e;
+    background: #cc2b5e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #17001f, #020118);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #17001f, #010013); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #img-bg{
-        background-image: url("https://i.imgur.com/d2LS1ON.jpg");
+        background-image: url("https://media.discordapp.net/attachments/969572770826579998/987463478606462976/bd1cc83242a8786df7c16836fe3efd25.jpg?width=563&height=375");
         min-height: 695px;
         background-position:center;
         background-repeat:no-repeat;
@@ -25,12 +31,14 @@
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    
+    font-family: "Baloo Da 2", serif;
     color: white;
 }
 
 p{
-    font-family: 'Courier New', Courier, monospace;
+    
+    font-family: "Baloo Da 2", serif;
     color: white;
     margin-bottom: 0%;
 }
