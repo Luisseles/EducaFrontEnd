@@ -26,6 +26,9 @@ margin-top: 3%;
 .cor {
     background-color: #000a11;
 }
+margemm{
+    margin-top: 5%;
+}
 
 .zoom:hover {
     -moz-transform: scale(1.1);
