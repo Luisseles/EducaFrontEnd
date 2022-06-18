@@ -12,6 +12,7 @@ import { UsuarioService } from '../service/usuario.service';
 export class CadastrarComponent implements OnInit {
   usuario: Usuario = new Usuario;
   confirmarSenha: string;
+  confirmarUsuario: string;
   pronome: string;
 
   constructor( 
@@ -23,8 +24,12 @@ export class CadastrarComponent implements OnInit {
     window.scroll(0,0)
   }
 
-  confirmSenha(event:any){
-    this.confirmarSenha=event.target.value
+  conferirSenha(eventSenha:any){
+    this.confirmarSenha=eventSenha.target.value
+  }
+
+  conferirUsuario(eventUsuario:any){
+    this.confirmarUsuario=eventUsuario.target.value
   }
 
   proname(event:any){
@@ -34,14 +39,24 @@ export class CadastrarComponent implements OnInit {
   cadastrarUsuario() {
     this.usuario.pronome = this.pronome;
     if(this.usuario.senha != this.confirmarSenha){
-      alert('as senhas estão incorretas!')
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'As senhas não coincidem',
+      })
+    }else if(this.usuario.usuario != this.confirmarUsuario) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Os e-mails não coincidem',
+      })
     }else{
       this.usuarioService.postCadastrar(this.usuario).subscribe((resp:Usuario)=>{
         this.usuario= resp
-        this.router.navigate(['/entrar'])
+        this.router.navigate(['/entrarUsuario'])
         Swal.fire(
-          'Good job!',
-          'You clicked the button!',
+          'Cadastro Realizado com Sucesso!',
+          'Acesse sua conta na próxima página',
           'success'
         )
       })

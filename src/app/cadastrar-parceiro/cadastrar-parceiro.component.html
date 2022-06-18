@@ -16,7 +16,11 @@
                     </div>
                     <div class="form-group">
                         <label for="E-mail" class="text-white"><p><b> E-mail</b></p></label>
-                        <input [(ngModel)]="parceiro.email" class="form-control" type="email" name="email" id="email" placeholder="Seu e-mail">
+                        <input (input)="conferirEmail($event)" class="form-control" type="email" name="email" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="ConfirmarE-mail" class="text-white"><p><b> Confirme seu e-mail</b></p></label>
+                        <input [(ngModel)]="parceiro.email" class="form-control" type="cemail" name="cemail" id="cemail" placeholder="Confirme seu e-mail">
                     </div>
                     <div class="form-group">
                         <label for="Celular" class="text-white"><p><b> Celular</b></p></label>
@@ -28,7 +32,7 @@
                     </div>
                     <div class="form-group">
                         <label for="senha" class="text-white"><p><b> Senha</b></p></label>
-                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha" placeholder="Sua Senha">
+                        <input (input)="conferirSenha($event)" class="form-control" type="password" name="senha" id="senha" placeholder="Sua Senha">
                     </div>
                     <div class="form-group">
                         <label for="confirmarSenha" class="text-white"><p><b>Confirmar Senha</b></p></label>
@@ -36,7 +40,7 @@
                     </div>
                     <div class="d-flex justify-content-center">
 
-                        <button type="submit" class="btn mr-4 core btn-squaree text-white " routerLink='/entrar'><p><b> Cancelar</b></p></button>
+                        <button type="submit" class="btn mr-4 core btn-squaree text-white " routerLink='/inicio'><p><b> Cancelar</b></p></button>
                         <button type="submit" class="btn cor btn-square text-white" (click)="cadastrarParceiro()"><p><b>Cadastrar</b></p></button>
                     </div>
                 </div>

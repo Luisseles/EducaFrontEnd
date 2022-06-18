@@ -24,6 +24,10 @@
                         <input [(ngModel)]="usuario.usuario" class="form-control" type="email" name="email" id="email" placeholder="Seu e-mail">
                     </div>
                     <div class="form-group">
+                        <label for="conferirUsuario"><p><b> Confirme seu e-mail</b></p></label>
+                        <input (input)="conferirUsuario($event)" class="form-control" type="text" name="cusuario" id="cusuario" placeholder="Confirme seu e-mail">
+                    </div>
+                    <div class="form-group">
                         <label for="Celular"><p><b> Celular</b></p></label>
                         <input [(ngModel)]="usuario.telefone" class="form-control" type="text" name="celular" id="celular" placeholder="Seu número de celular">
                     </div>
@@ -33,7 +37,7 @@
                     </div>
                     <div class="form-group">
                         <label for="senha"><p><b> Senha</b></p></label>
-                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha" placeholder="Sua Senha">
+                        <input (input)="conferirSenha($event)" class="form-control" type="password" name="senha" id="senha" placeholder="Sua Senha">
                     </div>
                     <div class="form-group">
                         <label for="confirmarSenha"><p><b>Confirmar Senha</b></p></label>
@@ -41,7 +45,7 @@
                     </div>
                     <div class="d-flex justify-content-center">
 
-                        <button type="submit" class="btn mr-4 core btn-squaree " routerLink='/entrar'><p><b> Cancelar</b></p></button>
+                        <button type="submit" class="btn mr-4 core btn-squaree " routerLink='/inicio'><p><b> Cancelar</b></p></button>
                         <button type="submit" class="btn cor btn-square" (click)="cadastrarUsuario()"><p><b>Cadastrar</b></p></button>
                     </div>
                 </div>
