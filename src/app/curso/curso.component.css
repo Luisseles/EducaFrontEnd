@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap%27');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css%22");
+.letra{
+    font-family: "Baloo Da 2", serif;
+    color: #fffc00;
+    
+   
+}
+.ma{
+margin-top: 3%;
+}
+.letras{
+    font-family: "Baloo Da 2", serif;
+    color: #fffffb;
+    
+}
+.letrass{
+    font-family: "Baloo Da 2", serif;
+    color: #fcfcf8;
+}
 .bg {
-    background-color: #2B475E;
+    background-color: #00050a;
 }
 
 .cor {
-    background-color: #FFD43D;
+    background-color: #000a11;
 }
 
 .zoom:hover {
@@ -18,10 +39,12 @@
 }
 
 .btn1:hover {
+color: black;
+    background-color: #ddd900;
+}
+.bg-colore{
+    background-image: url("https://media.discordapp.net/attachments/969572770826579998/987466221148598362/05683ca46e3c695751b8f002957925be.jpg?width=760&height=428");
 
-
-    color: white;
-    background-color: #2B475E;
 }
 
 .btn {
