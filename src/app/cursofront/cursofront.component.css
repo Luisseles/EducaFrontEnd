@@ -1,19 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap%27');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css%22");
+.letra{
+    font-family: "Baloo Da 2", serif;
+    color: #fffc00;
+    
+   
+}
+.ma{
+margin-top: 3%;
+}
+.letras{
+    font-family: "Baloo Da 2", serif;
+    color: #fffffb;
+    
+}
+.letrass{
+    font-family: "Baloo Da 2", serif;
+    color: #fcfcf8;
+}
+.bg {
+    background-color: #00050a;
+}
+
+.cor {
+    background-color: #000a11;
+}
+margemm{
+    margin-top: 5%;
+}
+
+.zoom:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.img {
+    height: 10%;
+    width: 10%;
+}
+
+.btn1:hover {
+color: black;
+    background-color: #ddd900;
+}
+.bg-colore{
+    background-image: url("https://media.discordapp.net/attachments/969572770826579998/987466221148598362/05683ca46e3c695751b8f002957925be.jpg?width=760&height=428");
+
+}
+
+.btn {
+    background-color: white;
+
+
+}
+
+.btm {
+    color: white;
+    background-color: #e92626;
+}
+
+.btm2 {
+    color: white;
+    background-color: #26e930;
+}
+
+.margem {
+
+    margin-top: 10%;
+}
+margin{
+    margin-left: 70px;
+}
+
+a{
+    color: gold;
+}
+
+.hd{
+    width: 100%;
+    height: 700px;
+}
+.image{
+    background-image: url("https://i.imgur.com/hyluL4W.jpg");
+}
+
+  .ft{
+    font-size: 20pt;
+    color: white;
+  }
+  .mart{
+    margin-top: 30%;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    
-  }
-
-  html{
-    scroll-behavior: smooth;
-  }
-
 
   header {
     width: 100%;
@@ -91,20 +175,6 @@
     animation: moveBanner 1s 0.7s forwards;
   }
 
-  .banner button {
-  
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Muli", serif;
-    letter-spacing: 0.1rem;
-    background:#128a6c;
-    padding: 1rem 3rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0;
-    animation: moveBanner 1s 0.9s forwards;
-  }
 
   @keyframes moveBanner {
     0% {
@@ -116,27 +186,17 @@
     }
   }
 
-  
-
-  .categorias {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-    
-  }
-
-
   .card {
     width: 18rem;
     height: 26rem;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #2B475E;
   }
 
   .card-img-wrapper {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #262626;
     border-radius: 0.5rem;
   }
 
@@ -159,52 +219,17 @@
     opacity: 0;
     visibility: hidden;
     padding: 2rem;
-    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.8);
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
     transition: all 0.3s;
   }
 
-  .card-info h2 {
-    font-family:"Baloo Da 2", serif;
-    font-size: 2rem;
-    font-weight: 500;
-    color: #eee;
-  }
+  
 
-  .card-info h3 {
-    font-family:"Muli", serif;
-    font-weight: bold;
-    color:#128a6c;
-    margin-bottom: 1.5rem;
-  }
+  
+  
 
-  .card-info p {
-    font-family:"Josefin Slab", serif;
-    color: #eee;
-    font-weight: 400;
-    width: 80%;
-    margin-bottom: 2rem;
-  }
 
-  .btn {
-    background: #128a6c;
-    font-family:"Muli", serif;
-    color: #eee;
-    border-radius: 0.5rem;
-    border: none;
-    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.8);
-  }
+ 
 
-  .card-info button {
-    width: 8rem;
-    height: 2.5rem;
-    cursor: pointer;
-  }
-
-  .card:hover .card-info {
-    bottom: 2rem;
-    opacity: 1;
-    visibility: visible;
-  }
-  .bg{
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+  
+ 

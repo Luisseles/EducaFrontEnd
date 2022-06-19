@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top" style="background-color:#2b475e">
+<nav class="navbar fixed-top bg-dark" >
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar">
@@ -10,24 +10,25 @@
                 <p class=" m-0 fs fp">Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </p>
         </a>
-        <div class="offcanvas offcanvas-start bg" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title fw-bold fn" id="offcanvasNavbarLabel">Educa++</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                        
-                        <a routerLink="/usuario" class="nav-link bf fw-bold" data-bs-dismiss="offcanvas">{{nome}}<img src="{{foto}}" alt="imagem usuario" width="50px" height="50px" class="img-fluid rounded-circle"></a>
+                        <a routerLink="/usuario" class="nav-link bf fw-bold" data-bs-dismiss="offcanvas">{{nome}}
+                            <img src="{{foto}}" alt="imagem usuario" width="50px" height="50px" class="img-fluid rounded-circle mar"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active bf fw-bold" aria-current="page" routerLink="/inicio">Home</a>
+                        <a class="nav-link active bf bt fw-bold" aria-current="page" routerLink="/inicio">Home</a>
                     </li>
                    
                     <li class="nav-item">
-                        <a routerLink="/categorias" class="nav-link bf fw-bold" data-bs-dismiss="offcanvas">Cursos</a>
+                        <a routerLink="/categoria" class="nav-link bf fw-bold" data-bs-dismiss="offcanvas">Cursos</a>
                     </li>
                     <li class="nav-item">
                         <a routerLink="/sobre-nos" class="nav-link bf fw-bold" data-bs-dismiss="offcanvas">Sobre nós</a>

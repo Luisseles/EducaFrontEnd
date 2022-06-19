@@ -16,7 +16,8 @@ import { EntrarParceiroComponent } from './entrar-parceiro/entrar-parceiro.compo
 import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parceiro.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CursoComponent } from './curso/curso.component';
-
+import { CursofrontComponent } from './cursofront/cursofront.component';
+import { CursocyberComponent } from './cursocyber/cursocyber.component';
 
 
 @NgModule({
@@ -33,8 +34,9 @@ import { CursoComponent } from './curso/curso.component';
     CadastrarParceiroComponent,
     CadastrarComponent,
     CategoriaComponent,
-    CursoComponent
-   
+    CursoComponent,
+    CursofrontComponent,
+    CursocyberComponent
   ],
   imports: [
     BrowserModule,

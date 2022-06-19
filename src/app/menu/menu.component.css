@@ -12,7 +12,7 @@
 }
 
 a:hover{
-    color: white;
+    color: rgb(20, 236, 225);
 }
 .fp{
     font-size: 20pt;
@@ -23,22 +23,22 @@ a:hover{
     text-decoration: none;
 }
 .bg{
-    background-color: #FFD43D;
+    background-image: url("https://i.imgur.com/kUkS6QF.jpg");
 }
 
 .bf{
     font-size: 20pt;
-    color: #2B475E;
+    color: #ffffff;
       
 }
 .fn{
     font-size: 35pt;
-    color: #2B475E;
+    color: #ffffff;
 }
 .btn:hover{
     
     color: white ;
-    background-color: #2B475E;
+    background-color: rgb(20, 236, 225);
 }
 .btn{
     background-color: white;
@@ -51,4 +51,10 @@ a:hover{
     font-size: 20pt;
     color: white;
     
+}
+.mar{
+    margin-left: 10px;
+}
+bt:hover{
+    color: white;
 }

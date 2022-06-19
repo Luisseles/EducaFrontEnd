@@ -10,7 +10,8 @@ import { EntrarParceiroComponent } from './entrar-parceiro/entrar-parceiro.compo
 import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parceiro.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CursoComponent } from './curso/curso.component';
-
+import { CursofrontComponent } from './cursofront/cursofront.component';
+import { CursocyberComponent } from './cursocyber/cursocyber.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "inicio", pathMatch: "full" },
@@ -23,8 +24,11 @@ const routes: Routes = [
   { path: "usuario", component:UsuarioComponent},
   { path: "sobre-nos", component:SobreNosComponent},
   {path:"categoria", component:CategoriaComponent},
-  {path: "cursos", component:CursoComponent},
- 
+  {path: "curso", component:CursoComponent},
+  {path: "cursofront", component: CursofrontComponent},
+  {path: "cursocyber", component: CursocyberComponent}
+  
+  
 ];
 
 @NgModule({
