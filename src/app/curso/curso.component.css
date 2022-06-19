@@ -78,3 +78,147 @@ a{
     color: gold;
 }
 
+.hd{
+    width: 100%;
+    height: 700px;
+}
+.image{
+    background-image: url("https://i.imgur.com/hyluL4W.jpg");
+}
+
+  .ft{
+    font-size: 20pt;
+    color: white;
+  }
+  .mart{
+    margin-top: 30%;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  .sessao-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sessao-header h1 {
+    font-family:"Baloo Da 2", serif;
+    font-size: 3rem;
+    color: #eee;
+    border-bottom: solid 3px #128a6c;
+    margin-bottom: 1.5rem;
+  }
+
+  .img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 25s;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+
+  .banner h1 {
+    color:gold;
+    font-size: 3.5rem;
+    font-weight: 200;
+    font-family:"Baloo Da 2", serif;
+    text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+  }
+
+  .banner p {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Josefin Slab", serif;
+    text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+  }
+
+
+  @keyframes moveBanner {
+    0% {
+      transform: translateY(10rem) rotateY(-30deg);
+    }
+    100% {
+      transform: translateY(0) rotateY(0);
+      opacity: 1;
+    }
+  }
+
+  .card {
+    width: 18rem;
+    height: 26rem;
+    position: relative;
+    background-color: #2B475E;
+  }
+
+  .card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 0.5rem;
+  }
+
+  .card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+
+  .card:hover .card-img-wrapper img {
+    opacity: 0.5;
+  }
+
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+  }

@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap%27');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css%22");
 .margem{
  
     margin-top: 10%;
 }
+.bg{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00050a, #000105);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00050a, #000105); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  
+}
+
 ::ng-deep body{
-    background-color: #2b475e;
+    background-image: url("https://media.discordapp.net/attachments/969572770826579998/988047362926727228/a563102285494ed48944fe5fef10d313.jpg?width=760&height=428");
+  
 }
 h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Baloo Da 2", serif;
     color: #ffffff;
 
 }
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Baloo Da 2", serif;
     color: #ffd43d;
+    font-size: 65px;
 }
 
 button{
