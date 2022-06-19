@@ -12,10 +12,7 @@ export class ParceirosComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(){
-    if(environment.token==''){
-      //alert('Seção expirada, faça login novamente')
-      this.router.navigate(['/entrar'])
-    }
+  
   }
 
 }

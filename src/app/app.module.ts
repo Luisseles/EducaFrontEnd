@@ -18,6 +18,7 @@ import { CategoriaComponent } from './categoria/categoria.component';
 import { CursoComponent } from './curso/curso.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { CursoComponent } from './curso/curso.component';
     CadastrarComponent,
     CategoriaComponent,
     CursoComponent
+   
   ],
   imports: [
     BrowserModule,

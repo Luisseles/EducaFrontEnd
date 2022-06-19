@@ -11,6 +11,7 @@ import { CadastrarParceiroComponent } from './cadastrar-parceiro/cadastrar-parce
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CursoComponent } from './curso/curso.component';
 
+
 const routes: Routes = [
   { path: "", redirectTo: "inicio", pathMatch: "full" },
   { path: "entrarUsuario", component: EntrarComponent },
@@ -22,8 +23,8 @@ const routes: Routes = [
   { path: "usuario", component:UsuarioComponent},
   { path: "sobre-nos", component:SobreNosComponent},
   {path:"categoria", component:CategoriaComponent},
-  {path: "cursos", component:CursoComponent}
-  
+  {path: "cursos", component:CursoComponent},
+ 
 ];
 
 @NgModule({
