@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-curso',
@@ -15,7 +16,11 @@ export class CursoComponent implements OnInit {
     
   }
   comprar(){
-    alert("Compra efetuada com sucesso")
+    Swal.fire(
+      'Compra Realizada Com Sucesso!',
+      'Aguardando confirmação de pagamento',
+      'success'
+    )
   }
 
 }
