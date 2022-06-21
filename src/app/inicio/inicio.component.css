@@ -111,24 +111,23 @@ header {
   }
 }
 
-.botao {
+.botao a {
 
   font-family: "Baloo Da 2", serif;
   color: black;
   font-weight: bold;
+  font-size: 15pt;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   background: #fffc00;
   background: -webkit-linear-gradient(to right, #ffffff, #fffc00);
   background: linear-gradient(to right, #ffffff, #fffc00);
-  padding: 0.5rem 1rem;
+  padding: 1rem 3rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 3rem;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  opacity: 2;
+  opacity: 1;
 }
 
 #lista1 {
@@ -139,14 +138,22 @@ header {
 
 
 #lista2 a {
-  margin-left: rem;
-
-
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 #lista2 .nav-item {
   font-weight: bold;
   font-size: 15pt;
+}
+
+i{
+  margin-left: 0.5rem;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-size: 20pt;
+  color: #fffc00;
 }
 
 
@@ -232,6 +239,7 @@ a:hover{
   margin-right: 7px;
 }
 
+
 .modal-header{
   background-color:#414345;
 }
@@ -271,5 +279,8 @@ margin-left: 11rem;
   font-weight: bold;
 }
 
+h6 a{
+  color: #fffc00;
+}
 
 
